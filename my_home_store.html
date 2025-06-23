@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY HOME STORE</title>
+  <style>
+    :root {
+      --rosa: #fde2e2;
+      --verde: #b8e0d2;
+      --verde-btn: #52aa76;
+      --rosa-texto: #f58ca4;
+      --texto: #355c57;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--rosa);
+      color: var(--texto);
+    }
+
+    header {
+      background-color: var(--rosa);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      color: var(--texto);
+    }
+
+    nav {
+      background-color: #f8cfd1;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--texto);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .producto {
+      background-color: #fbd1d1;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .producto h3 {
+      margin: 10px 0 5px;
+    }
+
+    .whatsapp {
+      background-color: var(--verde-btn);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: var(--texto);
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div style="width:30px; height:30px; background-color:#f8cfd1; border-radius:50%;"></div>
+      <h1>MY HOME STORE</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#nuevo">Nuevo</a>
+    <a href="#seminuevo">Seminuevo</a>
+    <a href="#proximamente">Próximamente a salir</a>
+  </nav>
+
+  <section class="productos">
+    <div class="producto" id="nuevo">
+      <img src="https://via.placeholder.com/300x300.png?text=Taza" alt="Producto nuevo">
+      <h3>NUEVO</h3>
+      <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">Contactar por WhatsApp</a>
+    </div>
+    <div class="producto" id="seminuevo">
+      <img src="https://via.placeholder.com/300x300.png?text=Bolso" alt="Producto seminuevo">
+      <h3>SEMINUEVO</h3>
+      <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">Contactar por WhatsApp</a>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x300.png?text=Cuadro" alt="Producto seminuevo">
+      <h3>SEMINUEVO</h3>
+      <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">Contactar por WhatsApp</a>
+    </div>
+    <div class="producto" id="proximamente">
+      <img src="https://via.placeholder.com/300x300.png?text=Coj%C3%ADn" alt="Próximamente">
+      <h3>Próximamente a salir</h3>
+      <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">Contactar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#">Tiendas</a>
+    <a href="#">Contacto</a>
+  </footer>
+</body>
+</html>
